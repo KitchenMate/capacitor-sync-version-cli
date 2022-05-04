@@ -1,4 +1,5 @@
-import {readFileSync as parsePlistFileSync, writeFileSync as writePlistFileSync} from 'simple-plist';
+import pkg from 'simple-plist'
+const {readFileSync: parsePlistFileSync, writeFileSync: writePlistFileSync} = pkg
 
 import logdown from 'logdown';
 const logger = logdown('Cap Sync Version - iOS');
